@@ -3,175 +3,298 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yixuan | Software Development & Data Analytics Portfolio</title>
+  <title>@yixuanng26 • Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Plus Jakarta Sans for a clean, modern aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="#" class="logo">Yixuan</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <!-- Aesthetic Ambient Background Blobs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <!-- Top Glass Navigation -->
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <span class="handle">@yixuanng26</span>
+      <div class="nav-actions">
+        <a href="resume.pdf" download class="btn-pill outline">Resume ↓</a>
+        <a href="mailto:[YOUR-EMAIL@EXAMPLE.COM]" class="btn-pill gradient">Message</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="about" class="hero">
-    <div class="container">
-      <h1>Hi, I'm <span class="accent">Yixuan</span>.</h1>
-      <p class="subtitle">Software Development & Data Analytics Student</p>
-      <p class="bio">
-        I build structured software applications and turn raw datasets into actionable visual insights. 
-        Experienced in Python, C++, SQL, and end-to-end data analysis workflows from exploratory cleaning to interactive dashboards.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/yixuanng26" target="_blank" rel="noopener" class="btn secondary">GitHub Profile</a>
+  <main class="container">
+
+    <!-- 1. INSTAGRAM-STYLE PROFILE HEADER (About Me) -->
+    <section class="profile-header">
+      <div class="avatar-ring">
+        <!-- Replace src with your photo file in GitHub, e.g., profile.jpg -->
+        <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Yixuan&backgroundColor=ffdfbf" alt="Yixuan Profile" class="avatar" />
       </div>
-    </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-
-        <!-- Project 1: Datathon -->
-        <article class="card">
-          <div class="card-tag">Data Analytics • Datathon</div>
-          <h3>Transaction & Routing Analytics Dashboard</h3>
-          <p>
-            Analyzed multi-dimensional transaction datasets in Google Colab using pandas, structured aggregated summaries in Google Sheets, and built a multi-page Google Looker Studio dashboard tracking payment volumes, routing behavior, ordering party types, and hourly traffic patterns.
-          </p>
-          <div class="tech-tags">
-            <span>Python (pandas)</span>
-            <span>Google Colab</span>
-            <span>Looker Studio</span>
-            <span>Google Sheets</span>
-          </div>
-          <div class="card-links">
-            <a href="[YOUR-LOOKER-STUDIO-LINK]" target="_blank" rel="noopener">Live Dashboard →</a>
-          </div>
-        </article>
-
-        <!-- Project 2: Hackathon -->
-        <article class="card">
-          <div class="card-tag">Hackathon Build</div>
-          <h3>MyFuture App</h3>
-          <p>
-            [Add 2–3 sentences describing the problem MyFuture App solves, the features you built during the hackathon, and the impact or outcome.]
-          </p>
-          <div class="tech-tags">
-            <span>[Tech 1]</span>
-            <span>[Tech 2]</span>
-            <span>[Tech 3]</span>
-          </div>
-          <div class="card-links">
-            <a href="[YOUR-GITHUB-REPO-LINK]" target="_blank" rel="noopener">Source Code →</a>
-          </div>
-        </article>
-
-        <!-- Project 3: Python OOP -->
-        <article class="card">
-          <div class="card-tag">Object-Oriented Programming</div>
-          <h3>Library Management System & RPG Combat Sim</h3>
-          <p>
-            Designed modular Python applications applying OOP principles including classes, encapsulation, and inheritance—featuring a catalog/borrowing management system and a turn-based text RPG combat engine.
-          </p>
-          <div class="tech-tags">
-            <span>Python</span>
-            <span>OOP</span>
-            <span>Inheritance</span>
-          </div>
-          <div class="card-links">
-            <a href="[YOUR-GITHUB-REPO-LINK]" target="_blank" rel="noopener">Source Code →</a>
-          </div>
-        </article>
-
-        <!-- Project 4: C++ -->
-        <article class="card">
-          <div class="card-tag">Systems & Algorithms</div>
-          <h3>3×3 Matrix Operations Tool</h3>
-          <p>
-            Implemented a console-based linear algebra utility in C++ using 2D arrays to perform matrix addition and transposition with clean input/output formatting.
-          </p>
-          <div class="tech-tags">
-            <span>C++</span>
-            <span>2D Arrays</span>
-          </div>
-          <div class="card-links">
-            <a href="[YOUR-GITHUB-REPO-LINK]" target="_blank" rel="noopener">Source Code →</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section alt-bg">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Python</li>
-            <li>C++</li>
-            <li>SQL</li>
-            <li>HTML5 & CSS3</li>
-          </ul>
+      <div class="profile-info">
+        <div class="profile-top">
+          <h1>Yixuan</h1>
+          <span class="verified-badge" title="Verified Builder">✦</span>
+          <span class="role-tag">Software Dev & Data Analytics</span>
         </div>
-        <div class="skill-group">
-          <h3>Data & Visualization</h3>
-          <ul>
-            <li>pandas (Exploratory Data Analysis)</li>
-            <li>Google Colab</li>
-            <li>Google Looker Studio</li>
-            <li>Google Sheets</li>
-          </ul>
+
+        <!-- Mini Stats Row -->
+        <div class="profile-stats">
+          <div><strong>5+</strong> Projects</div>
+          <div><strong>2</strong> Hackathons</div>
+          <div><strong>2027</strong> Grad Year</div>
         </div>
-        <div class="skill-group">
-          <h3>Core Concepts</h3>
-          <ul>
-            <li>Object-Oriented Programming (OOP)</li>
-            <li>SQL Joins, CTEs & Window Functions</li>
-            <li>Data Cleaning & Aggregation</li>
-            <li>Git & GitHub Version Control</li>
-          </ul>
+
+        <!-- Bio & Career Goals -->
+        <p class="bio">
+          Turning messy data into clear visual stories & building structured software.<br>
+          Currently studying Computer Science / Data Analytics — aspiring <strong>Software Engineer & Data Analyst</strong>.
+        </p>
+
+        <!-- Quick Social & Resume Links -->
+        <div class="profile-links">
+          <a href="https://github.com/yixuanng26" target="_blank" rel="noopener">🔗 github.com/yixuanng26</a>
+          <a href="[YOUR-LINKEDIN-URL]" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a href="mailto:[YOUR-EMAIL@EXAMPLE.COM]">✉️ Email</a>
+          <a href="resume.pdf" target="_blank">📄 Resume (PDF)</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container contact-box">
-      <h2 class="section-title">Get In Touch</h2>
-      <p>Interested in collaborating on software projects, hackathons, or data analytics? Feel free to reach out.</p>
-      <div class="hero-buttons">
-        <a href="mailto:[YOUR-EMAIL@EXAMPLE.COM]" class="btn primary">Email Me</a>
-        <a href="https://github.com/yixuanng26" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
-        <a href="[YOUR-LINKEDIN-URL]" target="_blank" rel="noopener" class="btn secondary">LinkedIn</a>
+    <!-- 2. STORY HIGHLIGHTS (Interactive Quick Jump & Skills/Edu) -->
+    <section class="highlights-row">
+      <button class="highlight-item" onclick="switchTab('projects')">
+        <div class="highlight-circle"><span>🚀</span></div>
+        <p>Projects</p>
+      </button>
+      <button class="highlight-item" onclick="switchTab('hackathons')">
+        <div class="highlight-circle"><span>🏆</span></div>
+        <p>Hackathons</p>
+      </button>
+      <button class="highlight-item" onclick="switchTab('skills')">
+        <div class="highlight-circle"><span>⚡</span></div>
+        <p>Tech Stack</p>
+      </button>
+      <button class="highlight-item" onclick="switchTab('logs')">
+        <div class="highlight-circle"><span>📓</span></div>
+        <p>Dev Log</p>
+      </button>
+      <button class="highlight-item" onclick="switchTab('education')">
+        <div class="highlight-circle"><span>🎓</span></div>
+        <p>Education</p>
+      </button>
+    </section>
+
+    <!-- 3. INSTAGRAM FEED TABS -->
+    <div class="feed-tabs">
+      <button class="tab-btn active" data-tab="projects" onclick="switchTab('projects')">⊞ PROJECTS</button>
+      <button class="tab-btn" data-tab="hackathons" onclick="switchTab('hackathons')">🏆 HACKATHONS</button>
+      <button class="tab-btn" data-tab="skills" onclick="switchTab('skills')">⚡ SKILLS & EDU</button>
+      <button class="tab-btn" data-tab="logs" onclick="switchTab('logs')">📓 LEARNING LOG</button>
+    </div>
+
+    <!-- TAB 1: FEATURED PROJECTS (3-Column Insta Grid -> Click for Case Study Modal) -->
+    <section id="tab-projects" class="tab-content active">
+      <div class="insta-grid">
+
+        <!-- Post 1: Datathon Dashboard -->
+        <div class="grid-post" onclick="openModal('datathon')">
+          <div class="post-cover gradient-1">
+            <span class="post-badge">📊 Data Analytics</span>
+            <h3>Transaction & Routing Dashboard</h3>
+            <p>Looker Studio • pandas • Sheets</p>
+          </div>
+          <div class="post-overlay">
+            <span>🔍 View Case Study</span>
+          </div>
+        </div>
+
+        <!-- Post 2: MyFuture App -->
+        <div class="grid-post" onclick="openModal('myfuture')">
+          <div class="post-cover gradient-2">
+            <span class="post-badge">📱 Hackathon App</span>
+            <h3>MyFuture App</h3>
+            <p>Full-Stack Prototype • UI/UX</p>
+          </div>
+          <div class="post-overlay">
+            <span>🔍 View Case Study</span>
+          </div>
+        </div>
+
+        <!-- Post 3: Python OOP Library System -->
+        <div class="grid-post" onclick="openModal('library')">
+          <div class="post-cover gradient-3">
+            <span class="post-badge">🐍 Python OOP</span>
+            <h3>Library Management System</h3>
+            <p>Classes • Encapsulation • CLI</p>
+          </div>
+          <div class="post-overlay">
+            <span>🔍 View Case Study</span>
+          </div>
+        </div>
+
+        <!-- Post 4: RPG Combat Sim -->
+        <div class="grid-post" onclick="openModal('rpg')">
+          <div class="post-cover gradient-4">
+            <span class="post-badge">⚔️ Game Logic</span>
+            <h3>OOP RPG Combat Engine</h3>
+            <p>Python • Inheritance • Polymorphism</p>
+          </div>
+          <div class="post-overlay">
+            <span>🔍 View Case Study</span>
+          </div>
+        </div>
+
+        <!-- Post 5: C++ Matrix Tool -->
+        <div class="grid-post" onclick="openModal('matrix')">
+          <div class="post-cover gradient-5">
+            <span class="post-badge">⚙️ C++ Systems</span>
+            <h3>3×3 Matrix Operations Tool</h3>
+            <p>C++ • 2D Arrays • Linear Algebra</p>
+          </div>
+          <div class="post-overlay">
+            <span>🔍 View Case Study</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 2: HACKATHONS & COMPETITIONS -->
+    <section id="tab-hackathons" class="tab-content">
+      <div class="bento-stack">
+
+        <article class="bento-card">
+          <div class="bento-header">
+            <span class="pill-tag pink">Datathon Competition</span>
+            <span class="date-label">2026</span>
+          </div>
+          <h3>End-to-End Payment & Routing Analytics Challenge</h3>
+          <p class="bento-sub"><strong>Role:</strong> Data Analyst & Dashboard Designer</p>
+          <p>
+            Processed raw transaction logs in Google Colab using <code>pandas</code>, engineered aggregated metrics in Google Sheets, and delivered an interactive multi-page Looker Studio dashboard uncovering peak hourly traffic windows, ordering party distributions, and payment routing bottlenecks under tight competition deadlines.
+          </p>
+          <div class="lesson-box">
+            <strong>💡 Lesson Learned:</strong> Clean data modeling before visualization saves hours—structuring clean summary tables made filtering by ordering party type seamless.
+          </div>
+        </article>
+
+        <article class="bento-card">
+          <div class="bento-header">
+            <span class="pill-tag purple">Hackathon Build</span>
+            <span class="date-label">2026</span>
+          </div>
+          <h3>MyFuture App — Rapid Prototyping Sprint</h3>
+          <p class="bento-sub"><strong>Role:</strong> [Your Team Role, e.g., Core Developer / UI Builder]</p>
+          <p>
+            [Describe the hackathon theme, the core problem MyFuture App tackled, what features your team shipped before the pitch deadline, and your key takeaways.]
+          </p>
+          <div class="lesson-box">
+            <strong>💡 Lesson Learned:</strong> Scoping a rock-solid MVP early beats cramming unfinished features in the final hour.
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TAB 3: TECHNICAL SKILLS & EDUCATION -->
+    <section id="tab-skills" class="tab-content">
+      <div class="bento-grid-2">
+        <!-- Technical Skills -->
+        <div class="bento-card">
+          <h3>⚡ Technical Skills</h3>
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <div class="chip-wrap">
+              <span class="chip">Python</span>
+              <span class="chip">C++</span>
+              <span class="chip">SQL</span>
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Data & Analytics</h4>
+            <div class="chip-wrap">
+              <span class="chip">pandas</span>
+              <span class="chip">Google Colab</span>
+              <span class="chip">Looker Studio</span>
+              <span class="chip">Google Sheets</span>
+              <span class="chip">EDA</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Developer Tools</h4>
+            <div class="chip-wrap">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="bento-card">
+          <h3>🎓 Education & Certifications</h3>
+          <div class="edu-item">
+            <h4>[Your Degree, e.g., B.Sc. in Computer Science / Software Engineering]</h4>
+            <p class="muted">[Your University Name] • Expected Graduation: [2027/2028]</p>
+            <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Systems (SQL), Linear Algebra.</p>
+          </div>
+          <hr class="soft-divider">
+          <div class="edu-item">
+            <h4>🏅 Certifications & Highlights</h4>
+            <ul class="clean-list">
+              <li>Datathon Participant — Payment & Routing Analytics</li>
+              <li>Hackathon Builder — MyFuture App</li>
+              <li>[Add any Coursera / Kaggle / SQL certificates here]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: REFLECTIONS & LEARNING LOG -->
+    <section id="tab-logs" class="tab-content">
+      <div class="bento-stack">
+        <article class="bento-card log-entry">
+          <span class="date-label">Log #01 • Data Analytics</span>
+          <h3>How I Structured a Multi-Page Looker Studio Dashboard Without Slowing Down Queries</h3>
+          <p>
+            During our datathon, connecting raw transaction rows directly to multiple charts made cross-filtering sluggish. By pre-aggregating hourly traffic and routing breakdowns in Google Colab with <code>pandas</code> first, the final Looker Studio report became instant and intuitive to explore.
+          </p>
+        </article>
+
+        <article class="bento-card log-entry">
+          <span class="date-label">Log #02 • Software Design</span>
+          <h3>Moving from Procedural Scripts to Clean OOP in Python</h3>
+          <p>
+            While building my RPG Combat Simulation and Library System, separating state (attributes) from behavior (methods) using inheritance eliminated duplicate damage-calculation code and made adding new character classes effortless.
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INSTAGRAM-STYLE PROJECT CASE STUDY MODAL -->
+  <div id="projectModal" class="modal-backdrop" onclick="closeModalOnBg(event)">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBody">
+        <!-- Populated dynamically by script.js -->
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2026 Yixuan. Hosted on GitHub Pages.</p>
-    </div>
+  <footer class="footer">
+    <p>Crafted with ✨ by Yixuan • Hosted on GitHub Pages</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
