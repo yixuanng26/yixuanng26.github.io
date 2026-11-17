@@ -24,22 +24,26 @@
     <header class="page-header">
       <span class="badge-pill">SCST1133 • Introduction to Data Engineering</span>
       <h1>Designing clean pipelines &amp; thoughtful data stories.</h1>
-      <p>Welcome to my academic e-portfolio documenting my growth as a computing student exploring data engineering at Universiti Teknologi Malaysia.</p>
+      <p>Welcome to my academic e-portfolio documenting my growth as a computing student exploring data engineering.</p>
     </header>
 
     <section class="bento-grid">
-      <!-- Intro & Programme Card -->
+      <!-- Intro & Profile Photo Card -->
       <div class="card span-8">
-        <span class="tag rose">About Me</span>
-        <h2 style="margin: 12px 0;">Hi, I’m [Your Name] — Computing Student</h2>
-        <p style="margin-bottom: 14px;">
-          I am an undergraduate student enrolled in the <strong>Bachelor of Computer Science (Data Engineering)</strong> programme at the <strong>Faculty of Computing, Universiti Teknologi Malaysia (UTM)</strong>.
-        </p>
-        <p style="margin-bottom: 20px; color: var(--text-muted);">
-          I enjoy turning messy raw datasets into structured, reliable insights—combining Python exploratory analysis, relational SQL querying, and clear visual dashboards with human-centered design thinking.
-        </p>
+        <div class="intro-flex">
+          <div class="profile-photo-wrap">
+            <img src="assets/rsz_dsc_2686mm.jpg" alt="Profile photo of Ng Yi Xuan" />
+          </div>
+          <div style="flex: 1; min-width: 240px;">
+            <span class="tag rose">About Me</span>
+            <h2 style="margin: 10px 0 8px;">Hi, I’m Ng Yi Xuan</h2>
+            <p style="color: var(--text-muted); font-size: 0.96rem;">
+              Computing student specializing in <strong>Data Engineering</strong>, passionate about turning messy raw datasets into clean, structured insights using Python, SQL, and visual analytics.
+            </p>
+          </div>
+        </div>
 
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px;">
           <a href="https://github.com/your-username" target="_blank" rel="noopener" class="btn-primary">
             GitHub Profile ↗
           </a>
@@ -50,29 +54,57 @@
             Explore My Artifacts →
           </a>
         </div>
-        <!-- Note: Private contact details (phone, home address, IC) intentionally omitted per course rules -->
       </div>
 
-      <!-- Official UTM Faculty of Computing Logo Card -->
+      <!-- Text-Only Faculty of Computing, UTM Column (No UTM Photo) -->
       <div class="card span-4" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <span class="tag">Affiliation</span>
-          <h3 style="margin: 10px 0 12px;">Faculty of Computing</h3>
+          <span class="tag">Academic Affiliation</span>
+          <h3 style="margin: 10px 0 8px;">Faculty of Computing, UTM</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem;">
+            Bachelor of Computer Science (Data Engineering)
+          </p>
         </div>
-        <div class="utm-logo-box">
-          <!-- Replace src with the official UTM FC logo file without altering colors or proportions -->
-          <img src="assets/utm-fc-logo.png" alt="Official UTM Faculty of Computing Logo" />
-          <small style="color: var(--text-muted); margin-top: 8px; font-size: 0.78rem;">
-            Universiti Teknologi Malaysia (UTM)
-          </small>
+        <div class="affiliation-box">
+          <p style="font-weight: 700; color: var(--rose-primary); font-size: 0.95rem;">
+            Universiti Teknologi Malaysia
+          </p>
+          <p style="font-size: 0.86rem; color: var(--text-muted); margin-top: 4px;">
+            Johor Bahru, Malaysia • Course: SCST1133
+          </p>
         </div>
+      </div>
+
+      <!-- Contact Me Column -->
+      <div class="card span-6">
+        <span class="tag rose">Get In Touch</span>
+        <h3 style="margin: 10px 0 6px;">Contact Me</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem;">
+          Feel free to reach out regarding coursework, data projects, or collaboration:
+        </p>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span>📞</span>
+            <div>
+              <strong>Phone:</strong>
+              <a href="tel:+60125531161">+60 12 553 1161</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <span>✉️</span>
+            <div>
+              <strong>Email:</strong>
+              <a href="mailto:ngyi.xuan@graduate.utm.my">ngyi.xuan@graduate.utm.my</a>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <!-- Technical Skills & Interests -->
       <div class="card span-6">
         <span class="tag sage">Technical Toolkit</span>
-        <h3 style="margin: 10px 0;">Core Skills &amp; Stack</h3>
-        <p style="color: var(--text-muted); font-size: 0.94rem;">
+        <h3 style="margin: 10px 0 6px;">Core Skills &amp; Stack</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem;">
           Tools and languages I actively practice across coursework, datathons, and personal builds:
         </p>
         <div class="skill-tags">
@@ -86,22 +118,34 @@
         </div>
       </div>
 
-      <!-- Quick Navigation Guide to Other Pages -->
-      <div class="card span-6">
-        <span class="tag rose">Portfolio Map</span>
-        <h3 style="margin: 10px 0;">What’s Inside This Site</h3>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 10px; font-size: 0.94rem;">
-          <li>✦ <a href="journey.html" style="color: var(--rose-primary); font-weight: 600;">Learning Journey:</a> How the 9 SCST1133 themes connect end-to-end.</li>
-          <li>✦ <a href="artifacts.html" style="color: var(--rose-primary); font-weight: 600;">Selected Work:</a> Figma, Industry Talk/Visit, Lifecycle Video &amp; EDA projects with 4-part reflections.</li>
-          <li>✦ <a href="summary.html" style="color: var(--rose-primary); font-weight: 600;">Course Summary:</a> My growth in data engineering and next goals.</li>
-          <li>✦ <a href="sources.html" style="color: var(--rose-primary); font-weight: 600;">Sources:</a> Credits &amp; AI tool usage disclosure.</li>
-        </ul>
+      <!-- Portfolio Map -->
+      <div class="card span-12">
+        <span class="tag rose">Portfolio Navigation</span>
+        <h3 style="margin: 10px 0;">Explore Other Pages</h3>
+        <div class="bento-grid" style="margin-top: 12px;">
+          <div class="ref-box span-6">
+            <h4><a href="journey.html" style="color: var(--rose-primary); text-decoration: none;">01. Learning Journey →</a></h4>
+            <p>How all 9 SCST1133 themes connect from data foundations to ethics and emerging tech.</p>
+          </div>
+          <div class="ref-box span-6">
+            <h4><a href="artifacts.html" style="color: var(--rose-primary); text-decoration: none;">02. Selected Work &amp; Reflections →</a></h4>
+            <p>Figma prototype, Industry Talk, Industry Visit, Lifecycle Video, and Data Analytics evidence.</p>
+          </div>
+          <div class="ref-box span-6">
+            <h4><a href="summary.html" style="color: var(--rose-primary); text-decoration: none;">03. Course Learning Summary →</a></h4>
+            <p>How my understanding of data engineering evolved and my next learning goals.</p>
+          </div>
+          <div class="ref-box span-6">
+            <h4><a href="sources.html" style="color: var(--rose-primary); text-decoration: none;">04. Sources &amp; Acknowledgements →</a></h4>
+            <p>References, credits, and AI tool transparency statement.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    SCST1133 Introduction to Data Engineering • UTM Faculty of Computing • Built with HTML &amp; CSS
+    Ng Yi Xuan • SCST1133 Introduction to Data Engineering • Faculty of Computing, UTM
   </footer>
 
 </body>
