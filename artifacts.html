@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selected Work &amp; Reflections | SCST1133 e-Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="brand">✿ DataStudio.utm</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="journey.html">Learning Journey</a></li>
+      <li><a href="artifacts.html" class="active">Selected Work</a></li>
+      <li><a href="summary.html">Course Summary</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <span class="badge-pill">Sections C &amp; D • Evidence &amp; Reflection</span>
+      <h1>Selected Work &amp; Critical Reflections</h1>
+      <p>Filter coursework artifacts by category. Each entry pairs concrete evidence with a reflection on lessons learned, key decisions, CLO alignment, and future improvements.</p>
+    </header>
+
+    <!-- Category Filter Buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Artifacts (5)</button>
+      <button class="filter-btn" data-filter="figma">Design Thinking &amp; Figma</button>
+      <button class="filter-btn" data-filter="talk">Industry Talk</button>
+      <button class="filter-btn" data-filter="visit">Industry Visit</button>
+      <button class="filter-btn" data-filter="video">Lifecycle Video</button>
+      <button class="filter-btn" data-filter="other">Other Selected Evidence</button>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 26px;">
+
+      <!-- 1. Design Thinking and Figma -->
+      <article class="card artifact-item" data-category="figma">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span class="tag rose">Design Thinking &amp; Figma • CLO2</span>
+          <a href="#" class="btn-outline" style="padding: 6px 14px; font-size: 0.84rem;">View Figma Prototype ↗</a>
+        </div>
+        <h2 style="margin: 10px 0 8px;">Interactive Data-Driven Mobile Prototype</h2>
+        <p style="color: var(--text-muted);">Applied the 5-stage Design Thinking process (Empathize, Define, Ideate, Prototype, Test) to design an interactive Figma wireframe translating user pain points into structured data inputs.</p>
+        <div class="reflection-grid">
+          <div class="ref-box">
+            <h4>1. What I Learned</h4>
+            <p>Good data engineering begins at the user interface—clean input validation and clear user flows prevent messy downstream records.</p>
+          </div>
+          <div class="ref-box">
+            <h4>2. Challenge / Decision</h4>
+            <p>Our initial wireframe cluttered the dashboard with too many metrics. We prioritized three core user indicators after peer usability feedback.</p>
+          </div>
+          <div class="ref-box">
+            <h4>3. Connection to Course / CLO</h4>
+            <p>Connects <strong>Data Acquisition</strong> and <strong>Design Thinking</strong> to how upstream applications generate structured data.</p>
+          </div>
+          <div class="ref-box">
+            <h4>4. What I Would Improve</h4>
+            <p>Add explicit error-state screens and field validation rules in Figma to show how invalid inputs are caught before ingestion.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Industry Talk -->
+      <article class="card artifact-item" data-category="talk">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span class="tag">Industry Talk • CLO1 &amp; CLO3</span>
+          <a href="#" class="btn-outline" style="padding: 6px 14px; font-size: 0.84rem;">Read Talk Report / Slides ↗</a>
+        </div>
+        <h2 style="margin: 10px 0 8px;">Enterprise Data Pipelines &amp; Career Insights</h2>
+        <p style="color: var(--text-muted);">Synthesized key takeaways from guest practitioners on production ETL orchestration, data quality SLAs, and cross-functional engineering teams.</p>
+        <div class="reflection-grid">
+          <div class="ref-box">
+            <h4>1. What I Learned</h4>
+            <p>In real production systems, monitoring data freshness and schema drift consumes more effort than writing initial transformation scripts.</p>
+          </div>
+          <div class="ref-box">
+            <h4>2. Challenge / Decision</h4>
+            <p>Translating unfamiliar cloud jargon into clear architectural notes required mapping every mentioned tool back to our lifecycle diagram.</p>
+          </div>
+          <div class="ref-box">
+            <h4>3. Connection to Course / CLO</h4>
+            <p>Bridges <strong>Industry Perspectives</strong> and <strong>Data Governance</strong> by showing how teams enforce accountability across shared data warehouses.</p>
+          </div>
+          <div class="ref-box">
+            <h4>4. What I Would Improve</h4>
+            <p>Prepare targeted technical questions beforehand about how junior data engineers test pipelines before deployment.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Industry Visit -->
+      <article class="card artifact-item" data-category="visit">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span class="tag sage">Industry Visit • CLO3</span>
+          <a href="#" class="btn-outline" style="padding: 6px 14px; font-size: 0.84rem;">View Visit Reflection Poster ↗</a>
+        </div>
+        <h2 style="margin: 10px 0 8px;">Observing Real-World IT &amp; Data Operations</h2>
+        <p style="color: var(--text-muted);">Documented infrastructure workflows, security compliance practices, and collaborative agile workspaces observed during our Faculty of Computing industry visit.</p>
+        <div class="reflection-grid">
+          <div class="ref-box">
+            <h4>1. What I Learned</h4>
+            <p>Physical and cloud security, role-based access control, and clear documentation are inseparable from daily engineering operations.</p>
+          </div>
+          <div class="ref-box">
+            <h4>2. Challenge / Decision</h4>
+            <p>Distilling a full-day tour into concise visual evidence while respecting company confidentiality by focusing strictly on public architectural takeaways.</p>
+          </div>
+          <div class="ref-box">
+            <h4>3. Connection to Course / CLO</h4>
+            <p>Reinforces <strong>Ethics, Privacy &amp; Governance</strong> in enterprise environments handling sensitive customer transactions.</p>
+          </div>
+          <div class="ref-box">
+            <h4>4. What I Would Improve</h4>
+            <p>Include a comparative diagram contrasting academic dataset workflows with the enterprise CI/CD and staging environments observed.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Data Engineering Lifecycle Video -->
+      <article class="card artifact-item" data-category="video">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span class="tag rose">Lifecycle Video • CLO1 &amp; CLO2</span>
+          <a href="#" class="btn-outline" style="padding: 6px 14px; font-size: 0.84rem;">Watch Lifecycle Video ↗</a>
+        </div>
+        <h2 style="margin: 10px 0 8px;">Explainer Video: End-to-End Data Engineering Lifecycle</h2>
+        <p style="color: var(--text-muted);">Produced an animated/narrated walkthrough illustrating how raw operational events travel through ingestion, storage, transformation, and BI serving.</p>
+        <div class="reflection-grid">
+          <div class="ref-box">
+            <h4>1. What I Learned</h4>
+            <p>Explaining technical stages visually forced me to clarify the exact boundary between raw data lakes and transformed analytical marts.</p>
+          </div>
+          <div class="ref-box">
+            <h4>2. Challenge / Decision</h4>
+            <p>Keeping the video concise without skipping undercurrents like security and DataOps—solved by using a recurring visual sidebar across scenes.</p>
+          </div>
+          <div class="ref-box">
+            <h4>3. Connection to Course / CLO</h4>
+            <p>Directly demonstrates mastery of the <strong>Data Engineering Lifecycle</strong> theme and clear technical communication.</p>
+          </div>
+          <div class="ref-box">
+            <h4>4. What I Would Improve</h4>
+            <p>Walk through a concrete e-commerce transaction example from JSON event to SQL aggregate table to ground the theory further.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Other Selected Evidence -->
+      <article class="card artifact-item" data-category="other">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span class="tag">Other Selected Evidence • Data Acquisition &amp; Analytics</span>
+          <a href="#" class="btn-outline" style="padding: 6px 14px; font-size: 0.84rem;">View Notebook &amp; Dashboard ↗</a>
+        </div>
+        <h2 style="margin: 10px 0 8px;">Transaction Dataset Cleaning (Colab) &amp; Looker Studio Dashboard</h2>
+        <p style="color: var(--text-muted);">Cleaned and aggregated multi-attribute CSV transaction records using Python (pandas) in Google Colab, then built an interactive multi-page Looker Studio report analyzing payment volumes, routing patterns, and hourly traffic.</p>
+        <div class="reflection-grid">
+          <div class="ref-box">
+            <h4>1. What I Learned</h4>
+            <p>Standardizing timestamps, null categories, and data types in pandas before exporting prevents misleading spikes in visual dashboards.</p>
+          </div>
+          <div class="ref-box">
+            <h4>2. Challenge / Decision</h4>
+            <p>High-cardinality fields made initial charts unreadable; I grouped edge categories and structured separate pages for volume vs. hourly trends.</p>
+          </div>
+          <div class="ref-box">
+            <h4>3. Connection to Course / CLO</h4>
+            <p>Applies <strong>Data Acquisition, Transformation &amp; Serving</strong> end-to-end using industry-relevant analytics tools.</p>
+          </div>
+          <div class="ref-box">
+            <h4>4. What I Would Improve</h4>
+            <p>Automate data quality assertions (schema checks and row-count logs) in Python so repeatable runs validate inputs automatically.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    SCST1133 Introduction to Data Engineering • UTM Faculty of Computing
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
