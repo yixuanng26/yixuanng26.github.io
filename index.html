@@ -1,44 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My SCST1133 E-Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yixuan | Software Development & Data Analytics Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>SCST1133 Data Engineering Ecosystem</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Selected Work</a>
-      <a href="#reflection">Reflection</a>
-    </nav>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Yixuan</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>Professional Profile</h2>
-      <p>Write a short professional introduction here.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="accent">Yixuan</span>.</h1>
+      <p class="subtitle">Software Development & Data Analytics Student</p>
+      <p class="bio">
+        I build structured software applications and turn raw datasets into actionable visual insights. 
+        Experienced in Python, C++, SQL, and end-to-end data analysis workflows from exploratory cleaning to interactive dashboards.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="https://github.com/yixuanng26" target="_blank" rel="noopener" class="btn secondary">GitHub Profile</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="work">
-      <h2>Selected Work</h2>
-      <article>
-        <h3>Design Thinking and Figma</h3>
-        <img src="images/project-screenshot.png"
-             alt="Screenshot of my Figma prototype">
-        <p>Explain the artifact and your contribution.</p>
-      </article>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
 
-    <section id="reflection">
-      <h2>Course Reflection</h2>
-      <p>Explain what you learned and what you would improve.</p>
-    </section>
-  </main>
+        <!-- Project 1: Datathon -->
+        <article class="card">
+          <div class="card-tag">Data Analytics • Datathon</div>
+          <h3>Transaction & Routing Analytics Dashboard</h3>
+          <p>
+            Analyzed multi-dimensional transaction datasets in Google Colab using pandas, structured aggregated summaries in Google Sheets, and built a multi-page Google Looker Studio dashboard tracking payment volumes, routing behavior, ordering party types, and hourly traffic patterns.
+          </p>
+          <div class="tech-tags">
+            <span>Python (pandas)</span>
+            <span>Google Colab</span>
+            <span>Looker Studio</span>
+            <span>Google Sheets</span>
+          </div>
+          <div class="card-links">
+            <a href="[YOUR-LOOKER-STUDIO-LINK]" target="_blank" rel="noopener">Live Dashboard →</a>
+          </div>
+        </article>
 
-  <footer><p>© 2026 Your Name</p></footer>
+        <!-- Project 2: Hackathon -->
+        <article class="card">
+          <div class="card-tag">Hackathon Build</div>
+          <h3>MyFuture App</h3>
+          <p>
+            [Add 2–3 sentences describing the problem MyFuture App solves, the features you built during the hackathon, and the impact or outcome.]
+          </p>
+          <div class="tech-tags">
+            <span>[Tech 1]</span>
+            <span>[Tech 2]</span>
+            <span>[Tech 3]</span>
+          </div>
+          <div class="card-links">
+            <a href="[YOUR-GITHUB-REPO-LINK]" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+        <!-- Project 3: Python OOP -->
+        <article class="card">
+          <div class="card-tag">Object-Oriented Programming</div>
+          <h3>Library Management System & RPG Combat Sim</h3>
+          <p>
+            Designed modular Python applications applying OOP principles including classes, encapsulation, and inheritance—featuring a catalog/borrowing management system and a turn-based text RPG combat engine.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>OOP</span>
+            <span>Inheritance</span>
+          </div>
+          <div class="card-links">
+            <a href="[YOUR-GITHUB-REPO-LINK]" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+        <!-- Project 4: C++ -->
+        <article class="card">
+          <div class="card-tag">Systems & Algorithms</div>
+          <h3>3×3 Matrix Operations Tool</h3>
+          <p>
+            Implemented a console-based linear algebra utility in C++ using 2D arrays to perform matrix addition and transposition with clean input/output formatting.
+          </p>
+          <div class="tech-tags">
+            <span>C++</span>
+            <span>2D Arrays</span>
+          </div>
+          <div class="card-links">
+            <a href="[YOUR-GITHUB-REPO-LINK]" target="_blank" rel="noopener">Source Code →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>HTML5 & CSS3</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data & Visualization</h3>
+          <ul>
+            <li>pandas (Exploratory Data Analysis)</li>
+            <li>Google Colab</li>
+            <li>Google Looker Studio</li>
+            <li>Google Sheets</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Core Concepts</h3>
+          <ul>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>SQL Joins, CTEs & Window Functions</li>
+            <li>Data Cleaning & Aggregation</li>
+            <li>Git & GitHub Version Control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container contact-box">
+      <h2 class="section-title">Get In Touch</h2>
+      <p>Interested in collaborating on software projects, hackathons, or data analytics? Feel free to reach out.</p>
+      <div class="hero-buttons">
+        <a href="mailto:[YOUR-EMAIL@EXAMPLE.COM]" class="btn primary">Email Me</a>
+        <a href="https://github.com/yixuanng26" target="_blank" rel="noopener" class="btn secondary">GitHub</a>
+        <a href="[YOUR-LINKEDIN-URL]" target="_blank" rel="noopener" class="btn secondary">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Yixuan. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
