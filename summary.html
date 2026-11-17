@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Summary | SCST1133 e-Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="brand">✿ DataStudio.utm</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="journey.html">Learning Journey</a></li>
+      <li><a href="artifacts.html">Selected Work</a></li>
+      <li><a href="summary.html" class="active">Course Summary</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <span class="badge-pill">Section E • Synthesis &amp; Growth</span>
+      <h1>Course Learning Summary</h1>
+      <p>Reflecting on the knowledge gained in SCST1133, how my perspective on data engineering evolved, and where I am heading next.</p>
+    </header>
+
+    <section class="bento-grid">
+      <!-- Mindset Shift -->
+      <div class="card span-6">
+        <span class="tag rose">Before SCST1133</span>
+        <h3 style="margin: 10px 0;">Viewing Data as Static Files</h3>
+        <p style="color: var(--text-muted);">
+          Previously, I treated datasets as ready-made CSV files downloaded for standalone Python scripts or SQL exercises—rarely questioning how those tables were captured, governed, or maintained over time.
+        </p>
+      </div>
+
+      <div class="card span-6">
+        <span class="tag sage">After SCST1133</span>
+        <h3 style="margin: 10px 0;">Systems &amp; Lifecycle Thinking</h3>
+        <p style="color: var(--text-muted);">
+          I now view data engineering as designing trustworthy socio-technical systems: balancing ingestion reliability, schema governance, ethical privacy safeguards, and clear stakeholder serving.
+        </p>
+      </div>
+
+      <!-- Knowledge & Skills Gained -->
+      <div class="card span-12">
+        <span class="tag">Core Competencies Developed</span>
+        <h2 style="margin: 10px 0 14px;">Key Knowledge &amp; Practical Skills</h2>
+        <div class="bento-grid">
+          <div class="ref-box span-4">
+            <h4>Architectural Literacy</h4>
+            <p>Mapping business problems across the 5 lifecycle stages and choosing appropriate storage and serving layers.</p>
+          </div>
+          <div class="ref-box span-4">
+            <h4>Data Wrangling &amp; BI</h4>
+            <p>Cleaning tabular data with Python/pandas, querying with relational SQL (CTEs &amp; joins), and communicating insights via Looker Studio.</p>
+          </div>
+          <div class="ref-box span-4">
+            <h4>Human-Centered &amp; Ethical Practice</h4>
+            <p>Prototyping user-friendly data capture in Figma while applying data governance and privacy principles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future Roadmap -->
+      <div class="card span-12">
+        <span class="tag rose">Next Steps</span>
+        <h2 style="margin: 10px 0 12px;">Areas I Want to Develop Further</h2>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+          <li><strong>01. Automated ETL Orchestration:</strong> Moving beyond manual notebook exports to scheduled pipelines using tools like Apache Airflow or dbt.</li>
+          <li><strong>02. Cloud Data Warehousing:</strong> Gaining hands-on experience with cloud storage buckets, partitioned Parquet tables, and BigQuery/Snowflake architectures.</li>
+          <li><strong>03. Streaming &amp; Data Quality Testing:</strong> Implementing automated schema validation and real-time event ingestion in upcoming hackathon and coursework builds.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    SCST1133 Introduction to Data Engineering • UTM Faculty of Computing
+  </footer>
+
+</body>
+</html>
