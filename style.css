@@ -328,6 +328,16 @@ footer {
   flex-wrap: wrap;
 }
 
+.profile-photo-wrap {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #F8BBD0, #E1BEE7);
+  box-shadow: 0 6px 16px rgba(225, 91, 136, 0.15);
+  flex-shrink: 0;
+}
+
 .profile-photo-wrap img {
   width: 100%;
   height: 100%;
