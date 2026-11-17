@@ -445,3 +445,56 @@ footer {
   border-radius: 999px;
   margin-bottom: 4px;
 }
+
+/* --- Achievement Action Button ---  */
+.achievement-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-lets-go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--rose-soft);
+  color: var(--rose-primary);
+  border: 1px solid var(--rose-border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-lets-go:hover {
+  background: var(--rose-primary);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.btn-lets-go.lavender {
+  background: var(--lavender-soft);
+  color: var(--lavender-text);
+  border-color: #D1C4E9;
+}
+
+.btn-lets-go.lavender:hover {
+  background: var(--lavender-text);
+  color: #FFFFFF;
+}
+
+.btn-lets-go.sage {
+  background: var(--sage-soft);
+  color: var(--sage-text);
+  border-color: #C8E6C9;
+}
+
+.btn-lets-go.sage:hover {
+  background: var(--sage-text);
+  color: #FFFFFF;
+}
