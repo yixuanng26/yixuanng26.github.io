@@ -3,298 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>@yixuanng26 • Portfolio</title>
+  <title>Home | SCST1133 Data Engineering e-Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts: Plus Jakarta Sans for a clean, modern aesthetic -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Aesthetic Ambient Background Blobs -->
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-
-  <!-- Top Glass Navigation -->
-  <header class="top-nav">
-    <div class="container nav-inner">
-      <span class="handle">@yixuanng26</span>
-      <div class="nav-actions">
-        <a href="resume.pdf" download class="btn-pill outline">Resume ↓</a>
-        <a href="mailto:[YOUR-EMAIL@EXAMPLE.COM]" class="btn-pill gradient">Message</a>
-      </div>
-    </div>
-  </header>
+  <!-- Top Multi-Page Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="brand">✿ DataStudio.utm</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="journey.html">Learning Journey</a></li>
+      <li><a href="artifacts.html">Selected Work</a></li>
+      <li><a href="summary.html">Course Summary</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
 
   <main class="container">
+    <header class="page-header">
+      <span class="badge-pill">SCST1133 • Introduction to Data Engineering</span>
+      <h1>Designing clean pipelines &amp; thoughtful data stories.</h1>
+      <p>Welcome to my academic e-portfolio documenting my growth as a computing student exploring data engineering at Universiti Teknologi Malaysia.</p>
+    </header>
 
-    <!-- 1. INSTAGRAM-STYLE PROFILE HEADER (About Me) -->
-    <section class="profile-header">
-      <div class="avatar-ring">
-        <!-- Replace src with your photo file in GitHub, e.g., profile.jpg -->
-        <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Yixuan&backgroundColor=ffdfbf" alt="Yixuan Profile" class="avatar" />
-      </div>
-
-      <div class="profile-info">
-        <div class="profile-top">
-          <h1>Yixuan</h1>
-          <span class="verified-badge" title="Verified Builder">✦</span>
-          <span class="role-tag">Software Dev & Data Analytics</span>
-        </div>
-
-        <!-- Mini Stats Row -->
-        <div class="profile-stats">
-          <div><strong>5+</strong> Projects</div>
-          <div><strong>2</strong> Hackathons</div>
-          <div><strong>2027</strong> Grad Year</div>
-        </div>
-
-        <!-- Bio & Career Goals -->
-        <p class="bio">
-          Turning messy data into clear visual stories & building structured software.<br>
-          Currently studying Computer Science / Data Analytics — aspiring <strong>Software Engineer & Data Analyst</strong>.
+    <section class="bento-grid">
+      <!-- Intro & Programme Card -->
+      <div class="card span-8">
+        <span class="tag rose">About Me</span>
+        <h2 style="margin: 12px 0;">Hi, I’m [Your Name] — Computing Student</h2>
+        <p style="margin-bottom: 14px;">
+          I am an undergraduate student enrolled in the <strong>Bachelor of Computer Science (Data Engineering)</strong> programme at the <strong>Faculty of Computing, Universiti Teknologi Malaysia (UTM)</strong>.
+        </p>
+        <p style="margin-bottom: 20px; color: var(--text-muted);">
+          I enjoy turning messy raw datasets into structured, reliable insights—combining Python exploratory analysis, relational SQL querying, and clear visual dashboards with human-centered design thinking.
         </p>
 
-        <!-- Quick Social & Resume Links -->
-        <div class="profile-links">
-          <a href="https://github.com/yixuanng26" target="_blank" rel="noopener">🔗 github.com/yixuanng26</a>
-          <a href="[YOUR-LINKEDIN-URL]" target="_blank" rel="noopener">💼 LinkedIn</a>
-          <a href="mailto:[YOUR-EMAIL@EXAMPLE.COM]">✉️ Email</a>
-          <a href="resume.pdf" target="_blank">📄 Resume (PDF)</a>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://github.com/your-username" target="_blank" rel="noopener" class="btn-primary">
+            GitHub Profile ↗
+          </a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="btn-outline">
+            LinkedIn (Optional) ↗
+          </a>
+          <a href="artifacts.html" class="btn-outline">
+            Explore My Artifacts →
+          </a>
+        </div>
+        <!-- Note: Private contact details (phone, home address, IC) intentionally omitted per course rules -->
+      </div>
+
+      <!-- Official UTM Faculty of Computing Logo Card -->
+      <div class="card span-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="tag">Affiliation</span>
+          <h3 style="margin: 10px 0 12px;">Faculty of Computing</h3>
+        </div>
+        <div class="utm-logo-box">
+          <!-- Replace src with the official UTM FC logo file without altering colors or proportions -->
+          <img src="assets/utm-fc-logo.png" alt="Official UTM Faculty of Computing Logo" />
+          <small style="color: var(--text-muted); margin-top: 8px; font-size: 0.78rem;">
+            Universiti Teknologi Malaysia (UTM)
+          </small>
         </div>
       </div>
-    </section>
 
-    <!-- 2. STORY HIGHLIGHTS (Interactive Quick Jump & Skills/Edu) -->
-    <section class="highlights-row">
-      <button class="highlight-item" onclick="switchTab('projects')">
-        <div class="highlight-circle"><span>🚀</span></div>
-        <p>Projects</p>
-      </button>
-      <button class="highlight-item" onclick="switchTab('hackathons')">
-        <div class="highlight-circle"><span>🏆</span></div>
-        <p>Hackathons</p>
-      </button>
-      <button class="highlight-item" onclick="switchTab('skills')">
-        <div class="highlight-circle"><span>⚡</span></div>
-        <p>Tech Stack</p>
-      </button>
-      <button class="highlight-item" onclick="switchTab('logs')">
-        <div class="highlight-circle"><span>📓</span></div>
-        <p>Dev Log</p>
-      </button>
-      <button class="highlight-item" onclick="switchTab('education')">
-        <div class="highlight-circle"><span>🎓</span></div>
-        <p>Education</p>
-      </button>
-    </section>
-
-    <!-- 3. INSTAGRAM FEED TABS -->
-    <div class="feed-tabs">
-      <button class="tab-btn active" data-tab="projects" onclick="switchTab('projects')">⊞ PROJECTS</button>
-      <button class="tab-btn" data-tab="hackathons" onclick="switchTab('hackathons')">🏆 HACKATHONS</button>
-      <button class="tab-btn" data-tab="skills" onclick="switchTab('skills')">⚡ SKILLS & EDU</button>
-      <button class="tab-btn" data-tab="logs" onclick="switchTab('logs')">📓 LEARNING LOG</button>
-    </div>
-
-    <!-- TAB 1: FEATURED PROJECTS (3-Column Insta Grid -> Click for Case Study Modal) -->
-    <section id="tab-projects" class="tab-content active">
-      <div class="insta-grid">
-
-        <!-- Post 1: Datathon Dashboard -->
-        <div class="grid-post" onclick="openModal('datathon')">
-          <div class="post-cover gradient-1">
-            <span class="post-badge">📊 Data Analytics</span>
-            <h3>Transaction & Routing Dashboard</h3>
-            <p>Looker Studio • pandas • Sheets</p>
-          </div>
-          <div class="post-overlay">
-            <span>🔍 View Case Study</span>
-          </div>
-        </div>
-
-        <!-- Post 2: MyFuture App -->
-        <div class="grid-post" onclick="openModal('myfuture')">
-          <div class="post-cover gradient-2">
-            <span class="post-badge">📱 Hackathon App</span>
-            <h3>MyFuture App</h3>
-            <p>Full-Stack Prototype • UI/UX</p>
-          </div>
-          <div class="post-overlay">
-            <span>🔍 View Case Study</span>
-          </div>
-        </div>
-
-        <!-- Post 3: Python OOP Library System -->
-        <div class="grid-post" onclick="openModal('library')">
-          <div class="post-cover gradient-3">
-            <span class="post-badge">🐍 Python OOP</span>
-            <h3>Library Management System</h3>
-            <p>Classes • Encapsulation • CLI</p>
-          </div>
-          <div class="post-overlay">
-            <span>🔍 View Case Study</span>
-          </div>
-        </div>
-
-        <!-- Post 4: RPG Combat Sim -->
-        <div class="grid-post" onclick="openModal('rpg')">
-          <div class="post-cover gradient-4">
-            <span class="post-badge">⚔️ Game Logic</span>
-            <h3>OOP RPG Combat Engine</h3>
-            <p>Python • Inheritance • Polymorphism</p>
-          </div>
-          <div class="post-overlay">
-            <span>🔍 View Case Study</span>
-          </div>
-        </div>
-
-        <!-- Post 5: C++ Matrix Tool -->
-        <div class="grid-post" onclick="openModal('matrix')">
-          <div class="post-cover gradient-5">
-            <span class="post-badge">⚙️ C++ Systems</span>
-            <h3>3×3 Matrix Operations Tool</h3>
-            <p>C++ • 2D Arrays • Linear Algebra</p>
-          </div>
-          <div class="post-overlay">
-            <span>🔍 View Case Study</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- TAB 2: HACKATHONS & COMPETITIONS -->
-    <section id="tab-hackathons" class="tab-content">
-      <div class="bento-stack">
-
-        <article class="bento-card">
-          <div class="bento-header">
-            <span class="pill-tag pink">Datathon Competition</span>
-            <span class="date-label">2026</span>
-          </div>
-          <h3>End-to-End Payment & Routing Analytics Challenge</h3>
-          <p class="bento-sub"><strong>Role:</strong> Data Analyst & Dashboard Designer</p>
-          <p>
-            Processed raw transaction logs in Google Colab using <code>pandas</code>, engineered aggregated metrics in Google Sheets, and delivered an interactive multi-page Looker Studio dashboard uncovering peak hourly traffic windows, ordering party distributions, and payment routing bottlenecks under tight competition deadlines.
-          </p>
-          <div class="lesson-box">
-            <strong>💡 Lesson Learned:</strong> Clean data modeling before visualization saves hours—structuring clean summary tables made filtering by ordering party type seamless.
-          </div>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-header">
-            <span class="pill-tag purple">Hackathon Build</span>
-            <span class="date-label">2026</span>
-          </div>
-          <h3>MyFuture App — Rapid Prototyping Sprint</h3>
-          <p class="bento-sub"><strong>Role:</strong> [Your Team Role, e.g., Core Developer / UI Builder]</p>
-          <p>
-            [Describe the hackathon theme, the core problem MyFuture App tackled, what features your team shipped before the pitch deadline, and your key takeaways.]
-          </p>
-          <div class="lesson-box">
-            <strong>💡 Lesson Learned:</strong> Scoping a rock-solid MVP early beats cramming unfinished features in the final hour.
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- TAB 3: TECHNICAL SKILLS & EDUCATION -->
-    <section id="tab-skills" class="tab-content">
-      <div class="bento-grid-2">
-        <!-- Technical Skills -->
-        <div class="bento-card">
-          <h3>⚡ Technical Skills</h3>
-          <div class="skill-category">
-            <h4>Languages</h4>
-            <div class="chip-wrap">
-              <span class="chip">Python</span>
-              <span class="chip">C++</span>
-              <span class="chip">SQL</span>
-              <span class="chip">HTML5</span>
-              <span class="chip">CSS3</span>
-              <span class="chip">JavaScript</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Data & Analytics</h4>
-            <div class="chip-wrap">
-              <span class="chip">pandas</span>
-              <span class="chip">Google Colab</span>
-              <span class="chip">Looker Studio</span>
-              <span class="chip">Google Sheets</span>
-              <span class="chip">EDA</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Developer Tools</h4>
-            <div class="chip-wrap">
-              <span class="chip">Git</span>
-              <span class="chip">GitHub</span>
-              <span class="chip">VS Code</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Education & Certifications -->
-        <div class="bento-card">
-          <h3>🎓 Education & Certifications</h3>
-          <div class="edu-item">
-            <h4>[Your Degree, e.g., B.Sc. in Computer Science / Software Engineering]</h4>
-            <p class="muted">[Your University Name] • Expected Graduation: [2027/2028]</p>
-            <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Systems (SQL), Linear Algebra.</p>
-          </div>
-          <hr class="soft-divider">
-          <div class="edu-item">
-            <h4>🏅 Certifications & Highlights</h4>
-            <ul class="clean-list">
-              <li>Datathon Participant — Payment & Routing Analytics</li>
-              <li>Hackathon Builder — MyFuture App</li>
-              <li>[Add any Coursera / Kaggle / SQL certificates here]</li>
-            </ul>
-          </div>
+      <!-- Technical Skills & Interests -->
+      <div class="card span-6">
+        <span class="tag sage">Technical Toolkit</span>
+        <h3 style="margin: 10px 0;">Core Skills &amp; Stack</h3>
+        <p style="color: var(--text-muted); font-size: 0.94rem;">
+          Tools and languages I actively practice across coursework, datathons, and personal builds:
+        </p>
+        <div class="skill-tags">
+          <span class="tag rose">Python (pandas)</span>
+          <span class="tag">SQL (Joins, CTEs, Window Functions)</span>
+          <span class="tag sage">C++</span>
+          <span class="tag rose">Google Colab</span>
+          <span class="tag">Google Looker Studio</span>
+          <span class="tag sage">Figma Prototyping</span>
+          <span class="tag">Data Cleaning &amp; ETL</span>
         </div>
       </div>
-    </section>
 
-    <!-- TAB 4: REFLECTIONS & LEARNING LOG -->
-    <section id="tab-logs" class="tab-content">
-      <div class="bento-stack">
-        <article class="bento-card log-entry">
-          <span class="date-label">Log #01 • Data Analytics</span>
-          <h3>How I Structured a Multi-Page Looker Studio Dashboard Without Slowing Down Queries</h3>
-          <p>
-            During our datathon, connecting raw transaction rows directly to multiple charts made cross-filtering sluggish. By pre-aggregating hourly traffic and routing breakdowns in Google Colab with <code>pandas</code> first, the final Looker Studio report became instant and intuitive to explore.
-          </p>
-        </article>
-
-        <article class="bento-card log-entry">
-          <span class="date-label">Log #02 • Software Design</span>
-          <h3>Moving from Procedural Scripts to Clean OOP in Python</h3>
-          <p>
-            While building my RPG Combat Simulation and Library System, separating state (attributes) from behavior (methods) using inheritance eliminated duplicate damage-calculation code and made adding new character classes effortless.
-          </p>
-        </article>
+      <!-- Quick Navigation Guide to Other Pages -->
+      <div class="card span-6">
+        <span class="tag rose">Portfolio Map</span>
+        <h3 style="margin: 10px 0;">What’s Inside This Site</h3>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 10px; font-size: 0.94rem;">
+          <li>✦ <a href="journey.html" style="color: var(--rose-primary); font-weight: 600;">Learning Journey:</a> How the 9 SCST1133 themes connect end-to-end.</li>
+          <li>✦ <a href="artifacts.html" style="color: var(--rose-primary); font-weight: 600;">Selected Work:</a> Figma, Industry Talk/Visit, Lifecycle Video &amp; EDA projects with 4-part reflections.</li>
+          <li>✦ <a href="summary.html" style="color: var(--rose-primary); font-weight: 600;">Course Summary:</a> My growth in data engineering and next goals.</li>
+          <li>✦ <a href="sources.html" style="color: var(--rose-primary); font-weight: 600;">Sources:</a> Credits &amp; AI tool usage disclosure.</li>
+        </ul>
       </div>
     </section>
-
   </main>
 
-  <!-- INSTAGRAM-STYLE PROJECT CASE STUDY MODAL -->
-  <div id="projectModal" class="modal-backdrop" onclick="closeModalOnBg(event)">
-    <div class="modal-card">
-      <button class="modal-close" onclick="closeModal()">✕</button>
-      <div id="modalBody">
-        <!-- Populated dynamically by script.js -->
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <p>Crafted with ✨ by Yixuan • Hosted on GitHub Pages</p>
+  <footer>
+    SCST1133 Introduction to Data Engineering • UTM Faculty of Computing • Built with HTML &amp; CSS
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
